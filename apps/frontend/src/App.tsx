@@ -1,16 +1,12 @@
-import './App.css'
-import { App as KonstaApp } from 'konsta/react'
-import { Button } from 'konsta/react'
+import React from 'react';
+import QuestionSearch from './pages/QuestionSearch';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <KonstaApp theme='material'>
-      <div className='h-screen flex flex-col justify-center items-center'>
-        <h1 className='font-mono'>Quest Search</h1>
-        <Button>Search</Button>
-      </div>
-    </KonstaApp>
-  )
-}
+    <div className="min-h-dvh bg-background text-on-background">
+      <QuestionSearch />
+    </div>
+  );
+};
 
-export default App
+export default App;
