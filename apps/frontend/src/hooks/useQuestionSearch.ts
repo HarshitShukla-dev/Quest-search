@@ -4,7 +4,7 @@ import { createConnectTransport } from "@connectrpc/connect-web";
 import { QuestionService } from "../ProtoGen/connectrpc/questions/v1/questions_pb";
 
 const transport = createConnectTransport({
-  baseUrl: "http://localhost:8080",
+  baseUrl: "https://questsearchbackend.azurewebsites.net",
 });
 
 const client = createClient(QuestionService, transport);
@@ -26,7 +26,7 @@ export const useQuestionSearch = () => {
         type: questionType,
         page,
         limit: 10
-      }, { signal: abort.signal, timeoutMs: 2000 });
+      }, { signal: abort.signal });
       setQuestions(response.questions || []);
       setTotalCount(response.totalCount || 0);
       setError("");
