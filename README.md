@@ -1,6 +1,6 @@
 # Quest Search
 
-Quest Search is a full-stack application that provides a search functionality for a questions database. The project showcases a robust backend and a responsive frontend, leveraging modern technologies and deployment strategies.
+Quest Search is a full-stack application designed to provide advanced search functionality for a questions database. The project features a robust backend built with ConnectRPC and a responsive frontend developed using Vite, React, and TypeScript. It leverages modern technologies and deployment strategies to ensure a seamless and efficient user experience.
 
 ## Folder Structure
 
