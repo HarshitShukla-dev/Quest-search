@@ -23,8 +23,8 @@ async function main() {
       reply.send({ status: "ok" });
     });
 
-    const port = Number(process.env.PORT) || 3000;
-    const host = process.env.HOST || "localhost";
+    const port = Number(process.env.PORT) || 8080;
+    const host = process.env.HOST || "0.0.0.0";
 
     await server.listen({ host: host, port: port });
     const address = server.server.address();
