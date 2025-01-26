@@ -20,6 +20,7 @@ message SearchRequest {
 
 message SearchResponse {
   repeated Question questions = 1;
+  int32 totalCount = 2;
 }
 
 service QuestionService {
