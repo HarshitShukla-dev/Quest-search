@@ -10,7 +10,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file connectrpc/questions/v1/questions.proto.
  */
 export const file_connectrpc_questions_v1_questions: GenFile = /*@__PURE__*/
-  fileDesc("Cidjb25uZWN0cnBjL3F1ZXN0aW9ucy92MS9xdWVzdGlvbnMucHJvdG8SF2Nvbm5lY3RycGMucXVlc3Rpb25zLnYxImYKCFF1ZXN0aW9uEgoKAmlkGAEgASgJEgwKBHR5cGUYAiABKAkSDQoFdGl0bGUYAyABKAkSDwoHb3B0aW9ucxgEIAMoCRIOCgZibG9ja3MYBSADKAkSEAoIc29sdXRpb24YBiABKAkiSQoNU2VhcmNoUmVxdWVzdBINCgVxdWVyeRgBIAEoCRIMCgR0eXBlGAIgASgJEgwKBHBhZ2UYAyABKAUSDQoFbGltaXQYBCABKAUiRgoOU2VhcmNoUmVzcG9uc2USNAoJcXVlc3Rpb25zGAEgAygLMiEuY29ubmVjdHJwYy5xdWVzdGlvbnMudjEuUXVlc3Rpb24ybgoPUXVlc3Rpb25TZXJ2aWNlElsKBlNlYXJjaBImLmNvbm5lY3RycGMucXVlc3Rpb25zLnYxLlNlYXJjaFJlcXVlc3QaJy5jb25uZWN0cnBjLnF1ZXN0aW9ucy52MS5TZWFyY2hSZXNwb25zZSIAYgZwcm90bzM");
+  fileDesc("Cidjb25uZWN0cnBjL3F1ZXN0aW9ucy92MS9xdWVzdGlvbnMucHJvdG8SF2Nvbm5lY3RycGMucXVlc3Rpb25zLnYxImYKCFF1ZXN0aW9uEgoKAmlkGAEgASgJEgwKBHR5cGUYAiABKAkSDQoFdGl0bGUYAyABKAkSDwoHb3B0aW9ucxgEIAMoCRIOCgZibG9ja3MYBSADKAkSEAoIc29sdXRpb24YBiABKAkiSQoNU2VhcmNoUmVxdWVzdBINCgVxdWVyeRgBIAEoCRIMCgR0eXBlGAIgASgJEgwKBHBhZ2UYAyABKAUSDQoFbGltaXQYBCABKAUiWgoOU2VhcmNoUmVzcG9uc2USNAoJcXVlc3Rpb25zGAEgAygLMiEuY29ubmVjdHJwYy5xdWVzdGlvbnMudjEuUXVlc3Rpb24SEgoKdG90YWxDb3VudBgCIAEoBTJuCg9RdWVzdGlvblNlcnZpY2USWwoGU2VhcmNoEiYuY29ubmVjdHJwYy5xdWVzdGlvbnMudjEuU2VhcmNoUmVxdWVzdBonLmNvbm5lY3RycGMucXVlc3Rpb25zLnYxLlNlYXJjaFJlc3BvbnNlIgBiBnByb3RvMw");
 
 /**
  * @generated from message connectrpc.questions.v1.Question
@@ -94,6 +94,11 @@ export type SearchResponse = Message<"connectrpc.questions.v1.SearchResponse"> &
    * @generated from field: repeated connectrpc.questions.v1.Question questions = 1;
    */
   questions: Question[];
+
+  /**
+   * @generated from field: int32 totalCount = 2;
+   */
+  totalCount: number;
 };
 
 /**
