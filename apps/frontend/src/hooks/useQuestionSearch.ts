@@ -4,7 +4,7 @@ import { createConnectTransport } from "@connectrpc/connect-web";
 import { QuestionService } from "../ProtoGen/connectrpc/questions/v1/questions_pb";
 
 const transport = createConnectTransport({
-  baseUrl: "http://localhost:8080",
+  baseUrl: "https://questsearchbackend.azurewebsites.net",
 });
 
 const client = createClient(QuestionService, transport);
